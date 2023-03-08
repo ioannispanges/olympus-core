@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+    <File name="file-output" fileName="olympus-test.log" append="false">
+        <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </File>
+  </Appenders>
+  
+  <Loggers>
+  <!-- Change the Root level to debug/info/trace to become more verbose -->
+  <!-- Warn should give an indication if there's problems, but left at error to be less verbose  -->
+    <Root level="error">
+      <AppenderRef ref="Console"/> 
+      
+      <!-- Use the file-output appender to log to file-->
+      <AppenderRef ref="file-output"/>
+
+    </Root>
+  </Loggers>
+</Configuration>

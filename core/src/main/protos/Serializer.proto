@@ -1,0 +1,132 @@
+syntax = "proto3";
+
+package eu.olympus.protos.serializer;
+
+option java_outer_classname = "PabcSerializer";
+
+message PresentationToken {
+    int64 epoch = 1;
+    map<string,Attribute> revealedAttributes= 2;
+    map<string,RangePredToken> rangePredTokens= 3;
+    oneof token {
+        PSzkToken psZkToken= 4;
+        PSzkTokenModified psZkTokenMod= 5;
+    }
+  }
+
+message Attribute {
+    bytes obj =1;
+    AttributeType type=2;
+}
+
+enum AttributeType {
+    STRING = 0;
+    INTEGER = 1;
+    DATE = 2;
+    BOOLEAN = 3;
+}
+
+message RangePredToken{
+    RangeProof proofLowerBound=1;
+    RangeProof proofUpperBound=2;
+    Group1Element commitV=3;
+}
+
+message RangeProof{
+    Group1Element t1=1;
+    Group1Element t2=2;
+    ZpElement tauX=3;
+    ZpElement mu=4;
+    ZpElement tHat=5;
+    Group1Element a=6;
+    Group1Element s=7;
+    InnerProductProof innerProductProof=8;
+}
+
+message InnerProductProof{
+    repeated Group1Element l=1;
+    repeated Group1Element r=2;
+    ZpElement a=3;
+    ZpElement b=4;
+}
+
+message PSzkToken {
+    Group2Element sigma1=1;
+    Group2Element sigma2=2;
+    ZpElement c=3;
+    map<string,ZpElement> revealedAttributes= 4;
+    ZpElement vt=5;
+    ZpElement vaPrim=6;
+  }
+
+  message PSzkTokenModified {
+      Group2Element sigma1=1;
+      Group2Element sigma2=2;
+      ZpElement c=3;
+      map<string,ZpElement> revealedAttributes= 4;
+      ZpElement vt=5;
+      ZpElement vaPrim=6;
+      map<string,ZpElement> vGamma= 7;
+    }
+
+message ZpElement {
+    bytes x=1;
+}
+
+message Group1Element {
+    ECP x=1;
+}
+
+message Group2Element {
+    ECP2 x=1;
+}
+
+// ECP is an elliptic curve point specified by its coordinates
+// ECP corresponds to an element of the first group (G1)
+message ECP {
+	bytes x = 1;
+	bytes y = 2;
+}
+
+// ECP2 is an elliptic curve point specified by its coordinates
+// ECP2 corresponds to an element of the second group (G2)
+message ECP2 {
+	bytes xa = 1;
+	bytes xb = 2;
+	bytes ya = 3;
+	bytes yb = 4;
+}
+
+message PSverfKey {
+    Group1Element vx=1;
+    Group1Element vy_m=2;
+    Group1Element vy_epoch=3;
+    map<string,Group1Element> vy=4;
+}
+
+message PScredential {
+    int64 epoch=1;
+    map<string,Attribute> revealedAttributes= 2;
+    PSsignature signature = 3;
+}
+
+message PSsignature {
+    ZpElement mPrim=1;
+    Group2Element sigma1=2;
+    Group2Element sigma2=3;
+}
+
+message IdentityProof{
+    string signature=1;
+    map<string,Attribute> attributes=2;
+}
+
+message PSpublicParam{
+    int32 n=1;
+    PSauxArg auxArg=2;
+}
+
+message PSauxArg{
+    string pairingName=1;
+    repeated string attributes=2;
+}
