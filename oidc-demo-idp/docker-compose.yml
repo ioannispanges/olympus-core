@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  pesto1:
+    build: .
+    environment:
+      - CONFIG_FILE=/app/config/server1.json
+      - DB_JAR=/app/db/db.sqlite
+    ports:
+      - "9933:9933"
+      - "9080:9080"
+  pesto2:
+    build: .
+    environment:
+      - CONFIG_FILE=/app/config/server2.json
+      - DB_JAR=/app/db/db.sqlite
+    ports:
+      - "9934:9934"
+      - "9081:9081"
+  pesto3:
+    build: .
+    environment:
+      - CONFIG_FILE=/app/config/server3.json
+      - DB_JAR=/app/db/db.sqlite
+    ports:
+      - "9935:9935"
+      - "9082:9082"
