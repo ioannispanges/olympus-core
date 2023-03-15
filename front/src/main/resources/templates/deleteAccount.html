@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Login page</title>
+  <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="container">
+  <div class="img_container" th:style="'background:url(/image/line-resized.jpg)'"></div>
+  <div class="vert_container">
+    <div class="box">
+
+      <div class="title_container">
+        <label class="title">Delete account</label>
+      </div>
+
+      <div class="error_container" th:if="${userDeletionError}">
+        <div class="error">The username and password entered does not match any existing users.
+        </div>
+      </div>
+      <div class="error_container" th:if="${unknownError}">
+        <div class="error">Something went wrong please try again.</div>
+      </div>
+
+      <br/>
+      <div class="form_container">
+        <form th:action="@{/deleteAccount}" method="post"
+              th:object="${deleteRequest}">
+
+
+          <div class="label_container">
+            <label class="label" for="username">Username</label>
+          </div>
+          <input type="text" id="username" name="username" class="form-control"
+                 autofocus="autofocus"
+                 th:field="*{username}"/> <br/>
+
+          <div class="label_container">
+            <label class="label" for="password">Password</label>
+          </div>
+          <input type="password" id="password" name="password" class="form-control"
+                 th:field="*{password}"/>
+          <br/>
+          <div class="button_container">
+            <input class="button" type="submit" value="Delete account"/>
+          </div>
+        </form>
+      </div>
+
+      <div class="link_container">
+        <label class="sub_label">
+          Don't want to delete your account?
+        </label>
+        <a th:href="@{/manageAccountPage}" class="sub_label">Go back</a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

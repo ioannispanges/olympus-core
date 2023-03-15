@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Manage your account</title>
+  <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="container">
+  <div class="img_container" th:style="'background:url(/image/line-resized.jpg)'"></div>
+  <div class="vert_container">
+    <div class="box">
+      <div class="title_container">
+        <label class="title" th:text="Welcome"/> <label class="title" th:text="${name}"/>
+      </div>
+
+      <div class="success_container" th:if="${hasChanged}">
+        <label class="error">The changes have been saved.</label>
+      </div>
+      <div class="title_container">
+        <div class="link_container">
+          <div class="nav_container">
+            <a th:href="@{/changePassword}" class="button">Change password</a>
+          </div>
+          <div class="nav_container">
+            <a th:href="@{/changeAttributes}" class="button">Change information</a>
+          </div>
+          <div class="nav_container">
+            <a th:href="@{/deleteAccount}" class="button">Delete account</a>
+          </div>
+        </div>
+      </div>
+      <div class="link_container">
+        <a th:href="@{/logout}" class="sub_label">Logout</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Change Attributes</title>
+  <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div class="container">
+  <div class="img_container" th:style="'background:url(/image/line-resized.jpg)'"></div>
+  <div class="vert_container">
+    <div class="box">
+      <div class="title_container">
+        <label class="title">Change Attributes</label>
+      </div>
+      <div class="error_container" th:if="${unknownError}">
+        <div class="error">Something went wrong, please try again.</div>
+      </div>
+      <div class="error_container" th:if="${dateNotParsable}">
+        <div class="error">The date entered was invalid.</div>
+      </div>
+
+      <br/>
+
+      <div class="form_container">
+        <form th:action="@{/changeAttributes}" method="post"
+              th:object="${changeAttributesRequest}">
+
+          <div class="label_container">
+            <label class="label" for="name">Name</label>
+          </div>
+          <input type="text" id="name" name="name" class="form-control"
+                 autofocus="autofocus"
+                 th:field="*{name}" value="${name}"/> <br/>
+          <div class="error_container">
+          <span class="error" th:if="${#fields.hasErrors('name')}"
+                th:errors="*{name}"></span>
+          </div>
+          <div class="label_container">
+            <label class="label" for="birthdate">Birth date</label>
+          </div>
+          <input type="date" id="birthdate" name="username" class="form-control"
+                 autofocus="autofocus"
+                 th:field="*{birthdate}" value="${birthdate}"/><br/>
+          <div class="error_container">
+          <span class="error" th:if="${#fields.hasErrors('birthdate')}"
+                th:errors="*{birthdate}"></span>
+          </div>
+
+          <div class="label_container">
+            <label class="label" for="email">Email</label>
+          </div>
+          <input type="email" id="email" name="email" class="form-control"
+                 autofocus="autofocus"
+                 th:field="*{email}" value="${email}"/><br/>
+          <div class="error_container">
+          <span class="error" th:if="${#fields.hasErrors('email')}"
+                th:errors="*{email}"></span>
+          </div>
+          <div class="button_container">
+            <input class="button" type="submit" value="Submit changes"/>
+          </div>
+        </form>
+
+        <div class="link_container">
+          <a th:href="@{/manageAccountPage}" class="sub_label">Go back</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CREDITFILE>
+	<CABECERA>
+		<MSGID>ID00001</MSGID>
+		<CREATIONDATE>1998-11-25T09:49:42.01</CREATIONDATE>
+	</CABECERA>
+	<BLOQUEIDENTIFICATIVO>
+		<IDENTIFICADOR id="0000" label="Identificador electronico">I98UU67EE568IO</IDENTIFICADOR>
+		<IDENTIFICADOR id="0001" label="Tipo de documento">CIF</IDENTIFICADOR>
+		<IDENTIFICADOR id="0002" label="Valor de documento">C11111111</IDENTIFICADOR>
+		<IDENTIFICADOR id="0003" label="Nombre">BBVA</IDENTIFICADOR>
+		<IDENTIFICADOR id="0004" label="Identificador empresarial">
+			<IDENSECUNDARIO id="0004.1" label="Tipo identificador">BIC</IDENSECUNDARIO>
+			<IDENSECUNDARIO id="0004.2" label="Valor identificador">BBVAMMXXX</IDENSECUNDARIO>
+		</IDENTIFICADOR>
+		<IDENTIFICADOR id="0005" label="Forma legal">A</IDENTIFICADOR>
+	</BLOQUEIDENTIFICATIVO>
+	<BLOQUEINFORMATIVO>
+		<REPOSITORIO id="INFORMA">
+			<INFORMACION id="1" label="Situacion de la empresa">N</INFORMACION>
+			<INFORMACION id="2" label="Scoring">2</INFORMACION>
+			<INFORMACION id="3" label="Limite de credito recomendado"> 
+				<INFORMACION id="3.1" label="Moneda">EUR</INFORMACION>
+				<INFORMACION id="3.2" label="Valor" type="result">200000</INFORMACION> <!-- Resultado -->
+			</INFORMACION>
+			<INFORMACION filter="2015" id="4.1" label="Resultado financiero">
+				<INFORMACION id="4.1.1" label="Anyo">2015</INFORMACION>
+				<INFORMACION id="4.1.2" label="Resultado" type="resultado">2500</INFORMACION>
+				<INFORMACION id="4.1.3" label="Moneda resultado">EUR</INFORMACION>
+				<INFORMACION id="4.1.4" label="Periodo" patron="MM">12</INFORMACION>
+				<INFORMACION id="4.1.5" label="Fecha fin ejercicio">2015-12-31</INFORMACION>
+				<INFORMACION filter="1" id="4.1.6" label="Resultado cuatrimestral">4578</INFORMACION>
+				<INFORMACION filter="2" id="4.1.7" label="Resultado cuatrimestral">201</INFORMACION>
+				<INFORMACION filter="3" id="4.1.8" label="Resultado cuatrimestral">3501</INFORMACION>
+				<INFORMACION filter="4" id="4.1.9" label="Resultado cuatrimestral">701</INFORMACION>
+				<INFORMACION filter="1" id="4.1.10" label="Evaluaci&#195;&#179;n cuatrimestral">2015-03-31</INFORMACION>
+				<INFORMACION filter="2" id="4.1.11" label="Evaluaci&#195;&#179;n cuatrimestral">2015-06-31</INFORMACION>
+				<INFORMACION filter="3" id="4.1.12" label="Evaluaci&#195;&#179;n cuatrimestral">2015-09-31</INFORMACION>				
+				<INFORMACION filter="4" id="4.1.13" label="Evaluaci&#195;&#179;n cuatrimestral">2015-12-31</INFORMACION>
+			</INFORMACION>
+			<INFORMACION filter="2016" id="4.2" label="Resultado financiero">
+				<INFORMACION id="4.2.1" label="Anyo">2016</INFORMACION>
+				<INFORMACION id="4.2.2" label="Resultado" type="result">12500</INFORMACION>
+				<INFORMACION id="4.2.3" label="Moneda resultado">EUR</INFORMACION>
+				<INFORMACION id="4.2.4" label="Periodo" patron="MM">12</INFORMACION>
+				<INFORMACION id="4.2.5" label="Fecha fin ejercicio" patron="YYYY-MM-DD">2016-12-31</INFORMACION>
+			</INFORMACION>
+			<INFORMACION filter="2017" id="4.3" label="Resultado financiero">
+				<INFORMACION id="4.3.1" label="Anyo">2017</INFORMACION>
+				<INFORMACION id="4.3.2" label="Resultado" type="result">112500</INFORMACION>
+				<INFORMACION id="4.3.3" label="Moneda resultado">EUR</INFORMACION>
+				<INFORMACION id="4.3.4" label="Periodo" patron="MM">12</INFORMACION>
+				<INFORMACION id="4.3.5" label="Fecha fin ejercicio" patron="YYYY-MM-DD">2017-12-31</INFORMACION>
+			</INFORMACION>
+		</REPOSITORIO>		
+	</BLOQUEINFORMATIVO>
+	<SIGNATURE/>
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="id-e21ef9138a257f3ce63de143789a25d3"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference Id="r-id-1" Type="" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/TR/1999/REC-xpath-19991116"><ds:XPath>not(ancestor-or-self::ds:Signature)</ds:XPath></ds:Transform><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>1Lj+OewuLbxXtBov86LuBb+MlHhYbc4vCfMl8AB0Qj0=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xades-id-e21ef9138a257f3ce63de143789a25d3"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>n6w0bDFpimR3ue7QRDkG7Tm0IfCqZp9kGtIr6B0vLuw=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="value-id-e21ef9138a257f3ce63de143789a25d3">iKRQIYA/R9aX8d4otN2Hr7Feykl3YHYUt9TVCOXccxy8FyAOl/Xwm7NuSkWZ3GS78DlrDZpFJpvV7gjruGcMUMIF6vHPbqss6xtGD/kPdwJEJlQfD64ymwCoXgZon3TKFNAIAgVjbt9Yj22UxMKbaz8eTU9W6UfxCqXxIQh2uCwphkGu5NaPYHrnxNFkHaAIPZvEOFJhxZRDdBoS5KBMP1bCbLDlsb9Ibk5D54O+WultvqbHgTmo/NskIdVXQ7WL2a7dkBPxQH+AwEJsu30g8/K4IgQCrFgrEP/xTwdDngfFuo/SAh69nCcBbwuRfrGD/xaSePt2jxfMU6u2hsDkSw==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIDvjCCAqagAwIBAgIUGUdZPia4hb3kOyZD84EHWTIPv98wDQYJKoZIhvcNAQELBQAwDzENMAsGA1UEAwwETXlDQTAeFw0yMDAyMTExNTE4MDRaFw0yMjAxMTMxNDQ2MjNaMIGhMQswCQYDVQQGEwJJVDEhMB8GA1UEBRMYc2Ugbm9uIGZvcm5pdG8gZGEgY2FwaXJlMRAwDgYDVQQEDAdNYXJpYW5vMRgwFgYDVQQDDA9BbnRvbmlvIE1hcmlhbm8xCjAIBgNVBAoMAU8xCzAJBgNVBAsMAk9VMRAwDgYDVQQqDAdBbnRvbmlvMQowCAYDVQQMDAFUMQwwCgYDVQQuEwNkbnEwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC8nyWDkaGpoWXnioxR13TU8hBzIRLo71AG0y/qwWPijn7zt+SLcIMPN/vnXa0JU4M+W+PKchiT30Z9T1spW8q6QlWqJDybH8AmK7OIrBChwC0lUkzEHQgZ972VX+VqDVCCvDgFmYI/SF6laGu4pfrYthe0Q4qWorIdC6HDm9ubvS4EqqmatB1K9T6voEng0SaT9pngwY5qjlDVYZFjM0AjLRWmvQ7pv9U9IWOwRJUjGRiFs7rTr5/M3sdabYTMMfJVrVDj6vbmhZdihZLn4lTJKKbtftV7a+uyb+RUD1OlhmlJjvNZWZbpgW/fve5fxwknfdF3gryRZHdspOo/Om73AgMBAAGjfzB9MAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzsyGzAOOKXfXTam2M5nEfdUNXXIwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMB0GA1UdDgQWBBTwHJm/6XFkDTohQtXFwM7mfLBC8jAOBgNVHQ8BAf8EBAMCBeAwDQYJKoZIhvcNAQELBQADggEBAAcUKg9XSCCmYHOT8HIhE2GTDLhCc62TItcIZHgWrUVsMYt78d/fvBkYKvuoidj/LQMW7jb6fmrSYzIOb9WzxUQuKU1Z8+zbAiicZlg1jDhw40jG1dVSENdCVEuTT7Ln1WvX4UsF4Bxbfp5tKwlf6N8gzCdcs7JktXbmTu/b8CehkG+n4vDt9Lq0d2q3rYdJ4JKNj/A3YFq4qka8AZQr609wNbJdaEp62oj3MI4XCIlwG4RY9XFGV2yXhxB0acdw/pV9jGxHgx6eUJnGeBDIgYChlwfhBo7bY3Tyavj+Jm+vtFPiugHoq7ssBtTPzkP9TJvJfFblh03WrLbGEzFgtN0=</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Target="#id-e21ef9138a257f3ce63de143789a25d3"><xades:SignedProperties Id="xades-id-e21ef9138a257f3ce63de143789a25d3"><xades:SignedSignatureProperties><xades:SigningTime>2020-02-18T08:44:55Z</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>TdWxw5CFiZgTYnpay3mVvN4mj9g2HI7NwvMiuZfrEzc=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>CN=MyCA</ds:X509IssuerName><ds:X509SerialNumber>144315896322115097176045219086737857739716804575</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#r-id-1"><xades:MimeType>application/octet-stream</xades:MimeType></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></CREDITFILE>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Login page</title>
+  <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="container">
+  <div class="img_container" th:style="'background:url(/image/line-resized.jpg)'"></div>
+  <div class="vert_container">
+    <div class="box">
+
+      <div class="title_container">
+        <label class="sub-title">Authenticate with</label>
+        <label class="title">Olympus</label>
+      </div>
+
+      <div class="success_container" th:if="${hasCreated}">
+        <label class="success">Your account was successfully created.</label>
+      </div>
+
+      <div class="success_container" th:if="${hasChangedPassword}">
+        <label class="success">Your password was successfully changed.</label>
+      </div>
+
+      <div class="success_container" th:if="${hasDeletedAccount}">
+        <label class="success">Your account was successfully deleted.</label>
+      </div>
+
+      <div class="error_container" th:if="${loginError}">
+        <label class="error">Login was unsuccessful.</label>
+      </div>
+
+      <br/>
+      <div class="form_container">
+        <form th:action="@{/authenticate}" method="post"
+              th:object="${loginRequest}">
+          <div class="label_container">
+            <label class="label" for="username">Username</label>
+          </div>
+          <input type="text" id="username" name="username" class="form-control"
+                 autofocus="autofocus"
+                 th:field="*{username}"/> <br/>
+          <div class="label_container">
+            <label class="label" for="password">Password</label>
+          </div>
+          <input type="password" id="password" name="password" class="form-control"
+                 th:field="*{password}"/>
+          <br/>
+          <div class="button_container">
+            <input class="button" type="submit" value="Log in"/>
+          </div>
+        </form>
+      </div>
+
+
+      <div class="link_container">
+        <label class="sub_label">
+          Don't have an account yet?
+        </label>
+        <a th:href="@{/createUser}" class="sub_label">Sign up</a>
+      </div>
+
+      <div class="link_container">
+        <label class="sub_label">
+          You can also
+        </label>
+        <a th:href="@{/manageAccountLogin}" class="sub_label">Manage your account</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

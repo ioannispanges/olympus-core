@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><creditfile>
+	<cabecera>
+		<msgid>ID00000047</msgid>
+		<creationDate>05/03/2020</creationDate>
+	</cabecera>
+	<informacionfinanciera>
+		<Repositorio1>
+			<repositorio>Informa</repositorio>
+			<valores>
+				<LimiteCreditoRecomendadoValor>1600000</LimiteCreditoRecomendadoValor>
+				<ResultadoFinanciero3>
+					<Resultado>10236684</Resultado>
+					<FechaFinEjercicio>31/12/2016</FechaFinEjercicio>
+					<Anyo>2016</Anyo>
+					<MonedaResultado>Euros</MonedaResultado>
+					<Periodo>12</Periodo>
+				</ResultadoFinanciero3>
+				<Scoring>18</Scoring>
+				<ResultadoFinanciero2>
+					<Resultado>14213311</Resultado>
+					<FechaFinEjercicio>31/12/2017</FechaFinEjercicio>
+					<Anyo>2017</Anyo>
+					<MonedaResultado>Euros</MonedaResultado>
+					<Periodo>12</Periodo>
+				</ResultadoFinanciero2>
+				<LimiteCreditoRecomendadoMoneda>EUR</LimiteCreditoRecomendadoMoneda>
+				<ResultadoFinanciero1>
+					<Resultado>8832446</Resultado>
+					<FechaFinEjercicio>31/12/2018</FechaFinEjercicio>
+					<Anyo>2018</Anyo>
+					<MonedaResultado>Euros</MonedaResultado>
+					<Periodo>12</Periodo>
+				</ResultadoFinanciero1>
+				<SituacionEmpresa>VIVA</SituacionEmpresa>
+			</valores>
+		</Repositorio1>
+	</informacionfinanciera>
+	<identificador>
+		<TipoDocumento>NIF</TipoDocumento>
+		<Nombre>NOMBRE ORGANIZACIÓN</Nombre>
+		<ValorDocumento>A80192727</ValorDocumento>
+		<IdentificadorElectronico>1581423452318</IdentificadorElectronico>
+	</identificador>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>3HLxMoEjFUgN8nerKQ0q3FEG2iK2wTMNLUheKbVMpbQ=</DigestValue></Reference></SignedInfo><SignatureValue>UgaY0XzMjh2Sab3Ri9S/3Wz0BbId2qF7/qVR3ZeDe0sfTHbMgdRSvACQWNLBuife5PkZMdo1UII5
+iTOXqBerVaw1HUYFpD8JUYF54RuR6GeXSlVZtASVTcmQjhkosss8WjvYXLmidpKEePTUCajvZQE6
+GR0KDRzU3vNL7ZVgI+1Kol1lRqiFgV5U8px9aVhVQ2F3z4D9v9OyuBdD8WNsHT8+TQobUcKin/SF
+PQsjyEvMvKYIgHshaaG577mjLR1uDLcupaVUQryzneCU+sARQVu4PhRGgpQnT6vb1JzLYJyRQcJ7
+5mQatcKuVrj2VDdSUsrQktNjD4b5tDqJZhrAIw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=CTI,OU=CESCE,L=Madrid,C=ES</X509SubjectName><X509Certificate>MIIDFzCCAf+gAwIBAgIEBNbVWjANBgkqhkiG9w0BAQsFADA8MQswCQYDVQQGEwJFUzEPMA0GA1UE
+BxMGTWFkcmlkMQ4wDAYDVQQLEwVDRVNDRTEMMAoGA1UEAxMDQ1RJMB4XDTIwMDMwMzEwNDk1OFoX
+DTIyMTEyODEwNDk1OFowPDELMAkGA1UEBhMCRVMxDzANBgNVBAcTBk1hZHJpZDEOMAwGA1UECxMF
+Q0VTQ0UxDDAKBgNVBAMTA0NUSTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIR9Th5Q
+C1WFuzgKKjkzbM2Ley/xh5p0QcyUxeiygGM20c1XO+90Ac+OeBogNPQkQCc6Zw2Z/5zotmSuHxlN
+pEf5Jx2Y0n+hG4zzIFx+vC9hhL9dg6UdMewgOs9I3O5mmhS/jNcV8ml7mNPjgjj7QxVwcuEUgIQd
+NYbyY3ELhFFBk5UjamOQr/2ZDRS1xYUrsfE3PXsi3yNhdxLg7caexOKN7RFsdqbFdcgvpscP5WOQ
+KkwvxHGzof3W3l0dbT0vf1YH+cZd7W92SfpCWuZoHAtSWIRKUc6zqisCNTursD00T0kSogg/YK34
+k0TQQjBL5MIt9UNKfWmYHBt0pVexte8CAwEAAaMhMB8wHQYDVR0OBBYEFKnApshkeFrjTw5+DgIE
+/kb5OwbMMA0GCSqGSIb3DQEBCwUAA4IBAQCBCvdCqFpAA0KgYVgxSOwEqOlgHzoZGDmFW+ijpXSU
+M725qrlPxBuXebC1NEXzQOhCB/9soj2DptMyBB6zedWyEPrAu2lhBOIJm6H6LiYM1CpdsFz7bBkF
+u7gukjfST6tsGWRzhYpNRDkY54YGlLWaaaSiZygsNXh34orBehRZOQeOp5nA3uyXRPeZJIh7TnCi
+z/ME7ZadlDNL2wOkFtTbfLh5V8++hv1evMusKkL3aZYvmZsv48SPDsxQv+AltClAPnQYul5Sa+7o
+LJ9RlexNoziO11aFO9kmO95bw15A+KPfSAB2SJswKXNA2wWeknUv+T/JM0l1vMQ2CuBqUb/c</X509Certificate></X509Data></KeyInfo></Signature><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="id-6001a18f4dd8b4416837eeab20ad368f"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference Id="r-id-1" Type="" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/TR/1999/REC-xpath-19991116"><ds:XPath>not(ancestor-or-self::ds:Signature)</ds:XPath></ds:Transform><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>3HLxMoEjFUgN8nerKQ0q3FEG2iK2wTMNLUheKbVMpbQ=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xades-id-6001a18f4dd8b4416837eeab20ad368f"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>dNmiZxTfu0d0U8MPUBK6AJIzkXTEtJuaHOEZoRaqhVk=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="value-id-6001a18f4dd8b4416837eeab20ad368f">vmf+qHfIXfxPLqh17RvgiLhQ5Y4iz86oI77V+YWlIsdFz8+ZFspPfr21DYgy7/0T32Bojq/wIeSeMyeB3dPIw/I3UJMkox49FXAr3PdzOlMly9ZdNN7aualsCZAl93nrciHtQZjkM5kFbsOqNx38XnQ/SaKrXhoMEc3kUKrmnUhgYjR8xxBWWMjv05t+xI++n5RzFt/L+i7e4AY/S0BLL/4br+KpIqg/S7BKU/Y6hvdqyJBTwrmTCdTvoC0sBPt6d0iQnVw0CHNFCmL2X4CFwDRBZXzy8VfylavfWJ1b2AlYFP43z7OLERABT8QKxfvkZjTPUltlm/Fe6XwRvCwKFg==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>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</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Target="#id-6001a18f4dd8b4416837eeab20ad368f"><xades:SignedProperties Id="xades-id-6001a18f4dd8b4416837eeab20ad368f"><xades:SignedSignatureProperties><xades:SigningTime>2020-03-19T15:28:10Z</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>grBN7J3zaN5A/PBUzsikcg59RJzTyIJKIWSvxjOVFyI=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>CN=TI Trust Technologies Collaudo FQ CA 1,OU=Ambiente di Collaudo,O=Telecom Italia Trust Technologies S.r.l.,C=IT</ds:X509IssuerName><ds:X509SerialNumber>20477</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#r-id-1"><xades:MimeType>application/octet-stream</xades:MimeType></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></creditfile>
