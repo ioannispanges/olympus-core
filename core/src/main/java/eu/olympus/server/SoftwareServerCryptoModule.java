@@ -16,15 +16,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import org.apache.commons.codec.Charsets;
-import org.miracl.core.BLS12461.BIG;
-import org.miracl.core.BLS12461.BLS;
-import org.miracl.core.BLS12461.ECP;
-import org.miracl.core.BLS12461.ECP2;
-import org.miracl.core.BLS12461.FP;
-import org.miracl.core.BLS12461.FP12;
-import org.miracl.core.BLS12461.FP2;
-import org.miracl.core.BLS12461.PAIR;
-import org.miracl.core.BLS12461.ROM;
+import org.miracl.core.BLS12461.*;
 import org.miracl.core.HMAC;
 
 public class SoftwareServerCryptoModule extends SoftwareCommonCrypto implements ServerCryptoModule {

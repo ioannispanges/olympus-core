@@ -1,7 +1,7 @@
 package eu.olympus.model.exceptions;
 
 /**
- * To be thrown when the an authentication fails. E.g. a password is incorrect.
+ * To be thrown when the authentication fails. E.g. a password is incorrect.
  */
 public class AuthenticationFailedException extends Exception {
 
